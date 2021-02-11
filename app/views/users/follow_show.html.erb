@@ -1,0 +1,13 @@
+<section class="section users">
+  <h1 class="title is-capitalized"><%= @title %></h1>
+  <hr />
+<% @users.each do |user| %>
+    <h2 class="title is-capitalized">
+      <%= link_to user.name, user %>
+    </h2>
+    <h3 class="subtitle is-lowercase">
+      <%= user.email%>
+    </h3>
+    <hr>
+<% end %>
+</section>

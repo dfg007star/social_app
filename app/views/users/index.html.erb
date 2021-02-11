@@ -1,0 +1,16 @@
+<section class="section users">
+  <h1 class="title is-capitalized"><%= pluralize(@users.count, "User") %></h1>
+  <hr />
+<% @users.each do |user| %>
+        <h2 class="title is-capitalized">
+          <%= link_to user.name, user %>
+          <% if user.id == current_user.id%>
+            <small class="subtitle">(You)</small>
+          <% end %>
+        </h2>
+        <h3 class="subtitle is-lowercase">
+          <%= user.email%>
+        </h3>
+    <hr>
+<% end %>
+</section>

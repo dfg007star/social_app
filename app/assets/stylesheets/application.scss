@@ -1,0 +1,19 @@
+@import "bulma";
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.columns {
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column-right {
+  margin-top: -40px;
+}
+.users {
+  margin-top: -30px;
+}

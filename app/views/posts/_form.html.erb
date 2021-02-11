@@ -1,0 +1,11 @@
+<div class="column mt-3">
+<%= form_with(model: post, local: true) do |form| %>
+<h4>Title:</h4>
+<%= form.text_area :title , placeholder:"Title.." , class: 'input mb-3'%>
+    <h4>Content:</h4>
+<%= form.text_area :content , placeholder:"Your content.." , class: 'input mb-3' %>
+
+<%= form.submit "Upload", class: 'button is-primary' %>
+
+<% end %>
+</div><div class="column"></div>

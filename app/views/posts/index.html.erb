@@ -1,0 +1,11 @@
+<h4>Posts</h4>
+
+<% @posts.each do |post| %>
+
+<%= post.title %>
+
+<%= post.description %>
+
+<%= link_to post.title, title %>
+
+<%= end %>
